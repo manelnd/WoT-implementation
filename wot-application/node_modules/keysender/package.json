@@ -1,0 +1,52 @@
+{
+  "name": "keysender",
+  "version": "2.3.0",
+  "description": "Node.js keyboard and mouse inputs emulator, global hotkey register for Windows",
+  "keywords": [
+    "automation",
+    "send input",
+    "block input",
+    "keyboard",
+    "mouse",
+    "emulator",
+    "screenshot",
+    "hotkey",
+    "screen",
+    "color recognition",
+    "autohotkey",
+    "ahk",
+    "uopilot"
+  ],
+  "type": "commonjs",
+  "source": "src/index.ts",
+  "main": "./dist/index.js",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "build": "yarn tsc"
+  },
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krombik/keysender.git"
+  },
+  "author": "Krombik",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/Krombik/keysender/issues"
+  },
+  "homepage": "https://github.com/Krombik/keysender#readme",
+  "dependencies": {
+    "node-addon-api": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
+  },
+  "files": [
+    "dist",
+    "src",
+    "binding.gyp"
+  ]
+}
